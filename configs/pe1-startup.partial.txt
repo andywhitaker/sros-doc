@@ -37,9 +37,6 @@
 /configure filter mac-filter "VPLS-MAC-Filter" entry 10 action accept
 /configure lag "lag-10" admin-state enable
 /configure lag "lag-10" mode access
-/configure lag "lag-10" lacp mode active
-/configure lag "lag-10" lacp system-id 00:00:00:00:01:02
-/configure lag "lag-10" lacp administrative-key 32768
 /configure { lag "lag-10" port 1/1/c11/1 }
 /configure { policy-options community "BLUE" member "target:64565:40" }
 /configure { policy-options community "RED" member "target:64555:30" }

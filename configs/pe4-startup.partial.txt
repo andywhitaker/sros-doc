@@ -2,9 +2,6 @@
 /configure card 1 mda 1 mda-type m24-800g-qsfpdd-1
 /configure lag "lag-10" admin-state enable
 /configure lag "lag-10" mode access
-/configure lag "lag-10" lacp mode active
-/configure lag "lag-10" lacp system-id 00:00:00:00:03:04
-/configure lag "lag-10" lacp administrative-key 32768
 /configure { lag "lag-10" port 1/1/c11/1 }
 /configure { port 1/1/c1 }
 /configure { port 1/1/c2 }
